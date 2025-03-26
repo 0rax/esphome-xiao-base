@@ -1,0 +1,15 @@
+# PCB exports
+kibot:
+  version: 1
+
+global:
+  out_dir: output
+
+import:
+  - file: configs/jlcpcb.kibot.yaml
+    outputs: all
+    filters: all
+  - file: configs/pcbdraw.kibot.yaml
+  - file: configs/ibom.kibot.yaml
+  - file: configs/pdfsch.kibot.yaml
+  - file: configs/3dexport.kibot.yaml
