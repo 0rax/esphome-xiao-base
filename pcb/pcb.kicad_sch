@@ -5,11 +5,11 @@
 	(uuid "76cb4e9e-c848-4f96-8850-cfdf3c15cc6a")
 	(paper "A4")
 	(title_block
-		(title "LK5DK")
-		(date "2025-03-23")
+		(title "ESPHome XIAO Base")
+		(date "2025-03-26")
 		(rev "v1.00")
-		(company "LambdaKB.dev")
-		(comment 1 "https://lambdakb.dev/devices/lk5dk")
+		(company "0rax")
+		(comment 1 "https://github.com/0rax/esphome-xiao-base/")
 	)
 	(lib_symbols
 		(symbol "Connector_Generic:Conn_02x06_Odd_Even"

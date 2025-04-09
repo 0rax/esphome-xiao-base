@@ -8,11 +8,11 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "LK5DK")
-		(date "2025-03-23")
+		(title "ESPHome XIAO Base")
+		(date "2025-03-26")
 		(rev "v1.00")
-		(company "LambdaKB.dev")
-		(comment 1 "https://lambdakb.dev/devices/lk5dk")
+		(company "0rax")
+		(comment 1 "https://github.com/0rax/esphome-xiao-base/")
 	)
 	(layers
 		(0 "F.Cu" signal)
@@ -116,7 +116,6 @@
 			(psnegative no)
 			(psa4output no)
 			(plot_black_and_white yes)
-			(plotinvisibletext no)
 			(sketchpadsonfab no)
 			(plotpadnumbers no)
 			(hidednponfab no)

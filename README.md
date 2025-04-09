@@ -21,9 +21,7 @@ A cutout has also been left for the underside of the XIAO to allow access to the
 
 The PCB has been designed in [KiCad EDA 9.0](https://www.kicad.org/).
 
-You can preview the project files using [KiCanvas](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2Flambdakb%keyboard-lk7d%2Fblob%2Fmain%2Fpcb%2Flk7d-pcb.kicad_pro) directly in your browser and download the latest fabrication files for JLCPCB from the [latest release](https://github.com/lambdakb/trackball-lk7d/releases/latest/).
-
-The exported schematic is also available under [`output/schematics`](output/schematics/).
+You can preview the project files using [KiCanvas](https://kicanvas.org/?github=https%3A%2F%2Fgithub.com%2F0rax%2Fesphome-xiao-base%2Ftree%2Fmain%2Fpcb) directly in your browser, the exported schematic is also available under [`output/schematics`](output/schematics/).
 
 ### PCB Order
 
