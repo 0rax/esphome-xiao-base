@@ -1,0 +1,142 @@
+# ESP32S3 Basic Configuration Example
+#
+# Required hardware:
+#  - ESPHome XIAO Base
+#  - XIAO ESP32S3
+#  - SSD1306 OLED 128x32 0.91 Display"
+#
+# You also need to download the following fonts to a `fonts/` directory in your ESPHome config directory:
+#  - Silkscreen-Regular (https://fonts.google.com/specimen/Silkscreen)
+
+# Board Configuration
+esphome:
+  name: "esp32s3-base"
+  friendly_name: "ESP32S3 Base"
+  platformio_options:
+    build_flags: -DBOARD_HAS_PSRAM
+    board_build.arduino.memory_type: qio_opi
+    board_build.f_flash: 80000000L
+    board_build.flash_mode: qio
+
+esp32:
+  board: esp32-s3-devkitc-1
+  framework:
+    type: arduino
+
+i2c:
+  sda: GPIO5
+  scl: GPIO6
+
+# Enable logging
+logger:
+
+# Enable Home Assistant API
+api:
+  encryption:
+    key: "!ha_encryption_key!"
+
+# ESPHome OTA
+ota:
+  - platform: esphome
+    password: "!my_ota_password!"
+
+# Network Configuration
+wifi:
+  ssid: !secret wifi_ssid
+  password: !secret wifi_password
+
+  # Enable fallback hotspot (captive portal) in case wifi connection fails
+  ap:
+    ssid: "ESP32S3 Base Fallback Hotspot"
+    password: "!my_generate_password!"
+
+captive_portal:
+
+# Enable WebUI
+web_server:
+  port: 80
+
+# OLED Display
+font:
+  - file: 'fonts/Silkscreen-Regular.ttf'
+    id: font1
+    size: 8
+
+display:
+  - platform: ssd1306_i2c
+    model: "SSD1306 128x32"
+    address: 0x3C
+    rotation: 180
+    lambda: |-
+      it.printf(2, 7, id(font1), TextAlign::BASELINE_LEFT, "ESPHome XIAO");
+      it.printf(125, 7, id(font1), TextAlign::BASELINE_RIGHT, "%.0f dBm", id(wifi_strength).state);
+      it.printf(64, 19, id(font1), TextAlign::BASELINE_CENTER, "%s", id(wifi_ip).state.c_str());
+      it.printf(64, 31, id(font1), TextAlign::BASELINE_CENTER, "%s", id(wifi_mac).state.c_str());
+
+# Time
+time:
+  - platform: homeassistant
+    id: esptime
+
+# Sensors
+binary_sensor:
+  # Buttons
+  - platform: gpio
+    pin:
+      number: GPIO1
+      mode:
+        input: true
+        pullup: true
+      inverted: true
+    name: "Button Left"
+    filters:
+      - delayed_off: 100ms
+    disabled_by_default: true
+    on_press:
+      - logger.log: "LEFT"
+  - platform: gpio
+    pin:
+      number: GPIO2
+      mode:
+        input: true
+        pullup: true
+      inverted: true
+    name: "Button OK"
+    filters:
+      - delayed_off: 100ms
+    disabled_by_default: true
+    on_press:
+      - logger.log: "OK"
+  - platform: gpio
+    pin:
+      number: GPIO3
+      mode:
+        input: true
+        pullup: true
+      inverted: true
+    name: "Button Right"
+    filters:
+      - delayed_off: 100ms
+    disabled_by_default: true
+    on_press:
+      - logger.log: "RIGHT"
+
+sensor:
+  # Uptime
+  - platform: uptime
+    name: "Uptime"
+  # Wifi Signal
+  - platform: wifi_signal
+    id: wifi_strength
+    name: "Wifi Signal"
+    update_interval: 60s
+
+text_sensor:
+  # Wifi Info
+  - platform: wifi_info
+    ip_address:
+      id: wifi_ip
+      name: "Wifi IP"
+    mac_address:
+      id: wifi_mac
+      name: "Wifi MAC"
