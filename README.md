@@ -11,14 +11,13 @@ A cutout has also been left for the underside of the XIAO to allow access to the
 
 ## PCB
 
-|             Front             |            Back             |
-| :---------------------------: | :-------------------------: |
-| [![PCB Front]][PCB Front PNG] | [![PCB Back]][PCB Back PNG] |
+|           Render            |           Front           |          Back           |
+| :-------------------------: | :-----------------------: | :---------------------: |
+| [![PCB Render]][PCB Render] | [![PCB Front]][PCB Front] | [![PCB Back]][PCB Back] |
 
-[PCB Front]: output/img/pcb-top.svg
-[PCB Front PNG]: output/img/pcb-top.png
-[PCB Back]: output/img/pcb-bottom.svg
-[PCB Back PNG]: output/img/pcb-bottom.png
+[PCB Render]: output/img/pcb-render.png
+[PCB Front]: output/img/pcb-top.png
+[PCB Back]: output/img/pcb-bottom.png
 
 The PCB has been designed in [KiCad EDA 9.0](https://www.kicad.org/).
 
