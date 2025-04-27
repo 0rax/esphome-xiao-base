@@ -3,7 +3,7 @@ kibot:
   version: 1
 
 global:
-  out_dir: output
+  out_dir: output/pcb
 
 import:
   - file: configs/jlcpcb.kibot.yaml

@@ -1,10 +1,10 @@
-# ESPHome XIAO Base
+# XIAO Base for ESPHome
 
-[![Release]( https://img.shields.io/github/v/release/0rax/esphome-xiao-base?display_name=release&style=for-the-badge&logo=github&logoColor=white&labelColor=grey)](https://github.com/0rax/esphome-xiao-base/releases/latest)
+[![Release](https://img.shields.io/github/v/release/0rax/esphome-xiao-base?display_name=release&style=for-the-badge&logo=github&logoColor=white&labelColor=grey)](https://github.com/0rax/esphome-xiao-base/releases/latest)
 [![License](https://img.shields.io/badge/License-CERN--OHL--S--2.0-0099B0?style=for-the-badge&logo=opensourcehardware&logoColor=white)](/LICENSE)
 [![KiCad](https://img.shields.io/badge/KiCad-v9-orange?style=for-the-badge&logo=kicad&logoColor=white&logoSize=auto)](https://www.kicad.org/)
 
-The ESPHome XIAO Base is a custom PCB designed to be used with the [ESPHome](https://esphome.io/) firmware as a base for creating new sensors.
+The XIAO Base for ESPHome is a custom PCB designed to be used with the [ESPHome](https://esphome.io/) firmware as a base for creating new sensors.
 
 It was made as a carrier board for the XIAO series of microcontrollers with an OLED display and three switches while providing an easy-to-access header on the back for standard communication protocols (I²C, UART and SPI).
 
@@ -16,9 +16,9 @@ A cutout has also been left for the underside of the XIAO to allow access to the
 | :-------------------------: | :-----------------------: | :---------------------: |
 | [![PCB Render]][PCB Render] | [![PCB Front]][PCB Front] | [![PCB Back]][PCB Back] |
 
-[PCB Render]: output/img/pcb-render.png
-[PCB Front]: output/img/pcb-top.png
-[PCB Back]: output/img/pcb-bottom.png
+[PCB Render]: assets/pcb-render.png
+[PCB Front]: output/pcb/img/pcb-top.png
+[PCB Back]: output/pcb/img/pcb-bottom.png
 
 The PCB has been designed in [KiCad EDA 9.0](https://www.kicad.org/).
 
@@ -48,7 +48,7 @@ Here is the list of parameters to use for the PCB order:
 
 | Part            | Ref.                                                         | Quantity | Remarks                                                                                                                                       |
 | --------------- | ------------------------------------------------------------ | :------: | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| PCB             | [ESPHome XIAO Base PCB](./README.md#pcb)                     |    1     | See the previous section on how to order it.                                                                                                  |
+| PCB             | [XIAO Base for ESPHome PCB](./README.md#pcb)                 |    1     | See the previous section on how to order it.                                                                                                  |
 | XIAO Controller | [XIAO ESP32C3], [XIAO ESP32C6] or [XIAO ESP32S3]             |    1     | Any ESPHome compatible XIAO controller should work.                                                                                           |
 | Tactile Switch  | [SCHURTER 1301.9303]                                         |    3     | Any 6 × 6 mm thru-hole tactile switch should work. We recommend a model with a stem length of 3 mm or more.                                   |
 | OLED Display    | [SSD1306 0.91" OLED Display] or [SSD1107 0.96" OLED Display] |    1     | Any SSD1306 or SSD1106 I²C based display should work. The PCB was designed to accommodate both 0.91" (128 × 32) and 0.96" (64 × 128) modules. |
@@ -67,6 +67,26 @@ Example ESPHome configuration files can be found in the [`esphome`](esphome/) di
 Two are provided for the [XIAO ESP32C6] and [XIAO ESP32S3] with two different type of OLED display.
 They should be easily modifiable to fit any ESPHome compatible XIAO microcontrollers and displays.
 
+## Add-ons
+
+### AQStation
+
+|                 Front                 |                Back                 |
+| :-----------------------------------: | :---------------------------------: |
+| [![AQStation Front]][AQStation Front] | [![AQStation Back]][AQStation Back] |
+
+[AQStation Front]: output/addons/aqstation/img/aqstation-top.png
+[AQStation Back]: output/addons/aqstation/img/aqstation-bottom.png
+
+### SensorBoard
+
+|                   Front                   |                  Back                   |
+| :---------------------------------------: | :-------------------------------------: |
+| [![SensorBoard Front]][SensorBoard Front] | [![SensorBoard Back]][SensorBoard Back] |
+
+[SensorBoard Front]: output/addons/sensorboard/img/sensorboard-top.png
+[SensorBoard Back]: output/addons/sensorboard/img/sensorboard-bottom.png
+
 ## Notes
 
 ### Potential Modifications
@@ -83,4 +103,4 @@ You are free to use, modify, and distribute this design for any purpose, provide
 - **Attribution**: Appropriate credit is given, a link to the license is provided, and any modifications are clearly indicated.
 - **Reciprocity**: Any derivative works must be released under the same license.
 
-If you are a retailer or business interested in producing or selling this design or related products, I’d love to discuss it! Please feel free to reach out so we can explore potential arrangements.
+If you are a retailer or business interested in producing or selling this design or related products, I’d love to discuss it! Please feel free to reach out, so we can explore potential arrangements.
