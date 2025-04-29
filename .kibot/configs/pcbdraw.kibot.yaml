@@ -12,6 +12,7 @@ outputs:
       style: '@PCBDRAW_STYLE@'
       format: png
       bottom: false
+      show_solderpaste: false
   - name: pcbdraw_png_bottom
     comment: PCB 2D render in PNG format
     type: pcbdraw
@@ -21,6 +22,7 @@ outputs:
       style: '@PCBDRAW_STYLE@'
       format: png
       bottom: true
+      show_solderpaste: false
   - name: pcbdraw_svg_top
     comment: PCB 2D render in SVG format
     type: pcbdraw
@@ -30,6 +32,7 @@ outputs:
       style: '@PCBDRAW_STYLE@'
       format: svg
       bottom: false
+      show_solderpaste: false
   - name: pcbdraw_svg_bottom
     comment: PCB 2D render in SVG format
     type: pcbdraw
@@ -39,6 +42,7 @@ outputs:
       style: '@PCBDRAW_STYLE@'
       format: svg
       bottom: true
+      show_solderpaste: false
 
 ...
 definitions:
