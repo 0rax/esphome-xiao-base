@@ -118,8 +118,8 @@ It was designed to be modular with 4 different headers / connector and should be
 
 ### Potential Modifications
 
-- The XIAO microcontroller is currently soldered at the front of the PCB making the OLED display require a double stacked header for clearance as well as force the use of switches with extended stem. Moving it to the back of the PCB would allow for everything in the front to be made smaller but would make access to the battery pads on the back of the XIAO more difficult.
-- Adding some sort of STEMMA QT / Qwiic connector to the back of the PCB would make it easier to integration some sensors.
+- The XIAO microcontroller is currently soldered at the front of the PCB making the OLED display require a double stacked header for clearance as well as force the use of switches with extended stem. Moving it to the back of the PCB would allow for everything in the front to be made smaller but would make access to the battery pads on the back of the XIAO and the `RST` / `BOOTSEL` buttons more difficult.
+- Adding some sort of STEMMA QT / Qwiic connector to the back of the PCB would make it easier to integration some sensors though space is quite limited.
 
 ## License
 
