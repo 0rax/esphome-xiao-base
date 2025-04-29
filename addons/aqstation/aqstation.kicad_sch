@@ -2582,17 +2582,6 @@
 		)
 		(uuid e999fc29-301e-4ad4-976d-b2b649ec83df)
 	)
-	(text "Adafruit Style I2C Header w/ 2 Extra Pins\n\nCompatible with:\n- Adafruit Si7021: https://www.adafruit.com/product/3251\n- Adafruit MCP9808: https://www.adafruit.com/product/1782\n- Adafruit AHT20: https://www.adafruit.com/product/4566\n- DFRobot Fermion SHT40: https://www.dfrobot.com/product-2437.html\n- DFRobot Fermion SHT31: https://www.dfrobot.com/product-2013.html\n- DFRobot Fermion SHTC3: https://www.dfrobot.com/product-2436.html\n- DFRobot Fermion AHT20: https://www.dfrobot.com/product-2603.html\n- DFRobot Fermion SHT35: https://www.dfrobot.com/product-2016.html\n\nMaybe:\n- CJMCU-8128 CCS811+SI7021+BMP280: https://aliexpress.com/item/1005008633429391.html\n- ENS160+AHT21 Module: https://aliexpress.com/item/1005004761725413.html\n- BME680 Purple Breakout: https://www.studiopieters.nl/bme680-gas-sensor/\n    (pinout needs to be verified, but the left 4 holes should match I2C header)"
-		(exclude_from_sim no)
-		(at 110.744 71.12 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "3f51c1f8-1679-4ac5-864f-38664588797e")
-	)
 	(text "Compatible with any 5V WS2812B\nCompatible LED strips."
 		(exclude_from_sim no)
 		(at 148.844 132.08 0)
@@ -2614,7 +2603,7 @@
 		)
 		(uuid "521c9c57-de86-47c3-9686-86f453ee2678")
 	)
-	(text "Compatible with:\n- DFRobot Fermion BME680: https://www.dfrobot.com/product-2143.html\n- Adabruit BME680: https://www.adafruit.com/product/3660\n- DFRobot Fermion BME688: https://www.dfrobot.com/product-2918.html\n- Adafruit BME688: https://www.adafruit.com/product/5046"
+	(text "BME680_Header compatible with:\n- DFRobot Fermion BME680: https://www.dfrobot.com/product-2143.html\n- Adafruit BME680: https://www.adafruit.com/product/3660\n- DFRobot Fermion BME688: https://www.dfrobot.com/product-2918.html\n- Adafruit BME688: https://www.adafruit.com/product/5046\n\nAdafruit_I2C_Header compatible with:\n- Adafruit Si7021: https://www.adafruit.com/product/3251\n- Adafruit MCP9808: https://www.adafruit.com/product/1782\n- Adafruit AHT20: https://www.adafruit.com/product/4566\n- DFRobot Fermion SHT40: https://www.dfrobot.com/product-2437.html\n- DFRobot Fermion SHT31: https://www.dfrobot.com/product-2013.html\n- DFRobot Fermion SHTC3: https://www.dfrobot.com/product-2436.html\n- DFRobot Fermion AHT20: https://www.dfrobot.com/product-2603.html\n- DFRobot Fermion SHT35: https://www.dfrobot.com/product-2016.html\n- BME680 Purple Breakout: https://www.studiopieters.nl/bme680-gas-sensor/\n\nPimoroni_I2CGarden_Header compatible with:\n- Pimoroni BME680 Breakout: https://shop.pimoroni.com/products/bme680-breakout\n- Pimoroni MICS6814 Breakout: https://shop.pimoroni.com/products/mics6814-gas-sensor-breakout"
 		(exclude_from_sim no)
 		(at 110.49 52.578 0)
 		(effects
@@ -2624,17 +2613,6 @@
 			(justify left top)
 		)
 		(uuid "97f69e9b-76b5-43b3-afe0-e9a0b7ca8368")
-	)
-	(text "Compatible with Pimoroni I2C Breakout Garden:\n- Pimoroni BME680 Breakout: https://shop.pimoroni.com/products/bme680-breakout\n- Piomoroni MICS6814 Breakout: https://shop.pimoroni.com/products/mics6814-gas-sensor-breakout"
-		(exclude_from_sim no)
-		(at -63.5 70.612 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left top)
-		)
-		(uuid "bcdf0d38-dd60-45e6-8802-c1c86b630d6a")
 	)
 	(text "PMSA003"
 		(exclude_from_sim no)

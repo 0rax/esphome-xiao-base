@@ -3033,7 +3033,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "d08c2d74-71c3-4cd4-a49b-f986c3171563")
+			(uuid "695e025e-4477-4d39-8dab-b63599728010")
 		)
 		(fp_line
 			(start -3.81 3.41)
@@ -3043,7 +3043,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "68aa796a-6a24-47ca-b679-ba55770eb802")
+			(uuid "b10b7020-4f7e-4875-b54c-e75812f6fbcd")
 		)
 		(fp_line
 			(start -1.27 1.27)
@@ -3053,7 +3053,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "7f667b81-2a92-4794-a5cd-155cea6e43b3")
+			(uuid "0007faf0-e84f-4e78-a89e-954888e3997f")
 		)
 		(fp_line
 			(start -1.27 -1.27)
@@ -3063,7 +3063,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "98b82b6d-f743-45ae-822e-92fdee105622")
+			(uuid "cf34b7c6-48f5-4747-ba8a-1faf2fedb333")
 		)
 		(fp_line
 			(start 1.27 -3.41)
@@ -3073,7 +3073,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "fa6cacbe-4e9a-411c-ab45-ddc7e8325438")
+			(uuid "29a2e49e-acf8-40ad-86cb-51c27f1b6a77")
 		)
 		(fp_line
 			(start -3.41 -3.81)
@@ -3083,7 +3083,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "f6ecd3c5-d130-40e7-8399-b8d3aa11c5c2")
+			(uuid "028ea088-3d31-438d-a9ed-d3f6092d1804")
 		)
 		(fp_rect
 			(start -2.54 -3.81)
@@ -3094,7 +3094,7 @@
 			)
 			(fill no)
 			(layer "F.SilkS")
-			(uuid "1de12d4a-f79a-492e-ba0e-ba7a0e7a7d5d")
+			(uuid "5ea59659-7b8c-44b2-9fa7-9b2f92bf5515")
 		)
 		(fp_arc
 			(start -3.41 3.81)
@@ -3105,7 +3105,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "84acb1c5-a6bb-4625-b76e-40733b53490d")
+			(uuid "22177b7c-385e-45d9-9feb-772d8cd01cd1")
 		)
 		(fp_arc
 			(start 1.27 3.41)
@@ -3116,7 +3116,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "ebc47068-770d-4ded-b449-7e003bebc75f")
+			(uuid "d28d33b8-66c8-4e1f-a1d8-b994b46b88c0")
 		)
 		(fp_arc
 			(start -3.81 -3.41)
@@ -3127,7 +3127,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "56dbcf8f-0318-4dae-b091-c7f4adcb4e46")
+			(uuid "4ddf3a4d-d9a9-4aa7-9b97-2e31123b7d58")
 		)
 		(fp_arc
 			(start 0.87 -3.81)
@@ -3138,7 +3138,7 @@
 				(type default)
 			)
 			(layer "F.SilkS")
-			(uuid "a8f35919-759c-4c25-aca3-a41ec5aa7372")
+			(uuid "e5e121d2-53e3-4eab-a133-93c7f35fc92c")
 		)
 		(fp_line
 			(start -1.77 4.31)
@@ -3148,7 +3148,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "352d1793-63a3-43ab-ae74-1164e794b4b7")
+			(uuid "580e7669-afd2-47af-b73d-7900d10042bb")
 		)
 		(fp_line
 			(start 1.77 4.31)
@@ -3158,7 +3158,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "6fc6b920-bf1b-4c2f-a896-19a4af29d859")
+			(uuid "ea2f4a90-f434-40ee-bfa4-55a742efd27a")
 		)
 		(fp_line
 			(start -1.77 -4.31)
@@ -3168,7 +3168,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "822acf83-b87a-4ef5-ae15-37bd3ed41480")
+			(uuid "afef8b7c-1fe1-4dda-8384-86e49a6530f3")
 		)
 		(fp_line
 			(start 1.77 -4.31)
@@ -3178,7 +3178,7 @@
 				(type solid)
 			)
 			(layer "F.CrtYd")
-			(uuid "a2117d87-40be-407a-8fef-99361342d16f")
+			(uuid "aa57a9eb-d5fb-4b02-a047-70c984115fa9")
 		)
 		(fp_line
 			(start -1.27 3.81)
@@ -3188,7 +3188,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "74a2a1d8-ab52-4b74-a749-704c0bfff740")
+			(uuid "c9b7a44a-e1ec-45d5-a8e7-abf6790b06cb")
 		)
 		(fp_line
 			(start 1.27 3.81)
@@ -3198,7 +3198,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "0de28253-520e-480e-8b95-5bc152e7a085")
+			(uuid "f0441b4f-0050-4c70-b17d-fafc783b8757")
 		)
 		(fp_line
 			(start -1.27 -3.175)
@@ -3208,7 +3208,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "47cf2d9e-4887-4a80-8990-f51c0f4439b2")
+			(uuid "a8d6d928-789e-4252-9977-a9a7db6870c2")
 		)
 		(fp_line
 			(start -0.635 -3.81)
@@ -3218,7 +3218,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "40c7c6cb-6e6a-4641-8817-25aa88ae6c31")
+			(uuid "c104d1a9-47ed-4310-a241-a89ed4c21b87")
 		)
 		(fp_line
 			(start 1.27 -3.81)
@@ -3228,7 +3228,7 @@
 				(type solid)
 			)
 			(layer "F.Fab")
-			(uuid "35344021-be61-449a-bd1a-74a2778acbef")
+			(uuid "10ae44f6-c840-4690-af4b-e6b0c79acddc")
 		)
 		(fp_text user "DIN"
 			(at -1.905 0 0)
@@ -3327,13 +3327,13 @@
 		(embedded_fonts no)
 		(model "${KICAD9_3DMODEL_DIR}/Connector_PinHeader_2.54mm.3dshapes/PinHeader_1x03_P2.54mm_Vertical.wrl"
 			(offset
-				(xyz 0 0 0)
+				(xyz 0 2.54 0)
 			)
 			(scale
 				(xyz 1 1 1)
 			)
 			(rotate
-				(xyz 0 0 0)
+				(xyz -0 -0 -0)
 			)
 		)
 	)
@@ -10297,7 +10297,7 @@
 		(effects
 			(font
 				(size 0.8 0.8)
-				(thickness 0.2)
+				(thickness 0.18)
 				(bold yes)
 			)
 			(justify left bottom mirror)

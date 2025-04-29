@@ -78,6 +78,33 @@ They should be easily modifiable to fit any ESPHome compatible XIAO microcontrol
 [AQStation Front]: output/addons/aqstation/img/aqstation-top.png
 [AQStation Back]: output/addons/aqstation/img/aqstation-bottom.png
 
+An indoor air quality station fit to accept a [Plantower PMSA003](https://plantower.com/en/products_33/77.html) particulate matter sensor and a range of temperature and / or humidity sensors.
+
+It was designed to be modular with 4 different headers / connector and should be compatible with:
+
+- Adafruit I2C Header
+  - [Adafruit Si7021](https://www.adafruit.com/product/3251)
+  - [Adafruit MCP9808](https://www.adafruit.com/product/1782)
+  - [Adafruit AHT20](https://www.adafruit.com/product/4566)
+  - [DFRobot Fermion SHT40](https://www.dfrobot.com/product-2437.html)
+  - [DFRobot Fermion SHT31](https://www.dfrobot.com/product-2013.html)
+  - [DFRobot Fermion SHTC3](https://www.dfrobot.com/product-2436.html)
+  - [DFRobot Fermion AHT20](https://www.dfrobot.com/product-2603.html)
+  - [DFRobot Fermion SHT35](https://www.dfrobot.com/product-2016.html)
+  - [BME680 Purple Breakout](https://www.studiopieters.nl/bme680-gas-sensor/)
+- BME680 Header
+  - [DFRobot Fermion BME680](https://www.dfrobot.com/product-2143.html)
+  - [Adafruit BME680](https://www.adafruit.com/product/3660)
+  - [DFRobot Fermion BME688](https://www.dfrobot.com/product-2918.html)
+  - [Adafruit BME688](https://www.adafruit.com/product/5046)
+- Pimoroni I2C Garden
+  - [Pimoroni BME680 Breakout](https://shop.pimoroni.com/products/bme680-breakout)
+  - [Pimoroni MICS6814 Breakout](https://shop.pimoroni.com/products/mics6814-gas-sensor-breakout)
+- ST/Qwiic Connector
+  - Any [Qwiic](https://www.sparkfun.com/qwiic) compatible sensor
+  - Any [STEMMA QT](https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma-qt) compatible sensor
+  - Any [easyC](https://soldered.com/easyC/) compatible sensor
+
 ### SensorBoard
 
 |                   Front                   |                  Back                   |

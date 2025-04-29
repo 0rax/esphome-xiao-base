@@ -10,4 +10,5 @@
   (lib (name "AqSensor")(type "KiCad")(uri "${KIPRJMOD}/libraries/local/footprints/AqSensor.pretty")(options "")(descr ""))
   (lib (name "ESPHomeXIAOBase")(type "KiCad")(uri "${KIPRJMOD}/libraries/local/footprints/ESPHomeXIAOBase.pretty")(options "")(descr ""))
   (lib (name "Header")(type "KiCad")(uri "${KIPRJMOD}/libraries/local/footprints/Header.pretty")(options "")(descr ""))
+  (lib (name "LKBD_MountingHole")(type "KiCad")(uri "${KIPRJMOD}/libraries/kicad-lkbd/footprints/LKBD_MountingHole.pretty")(options "")(descr ""))
 )

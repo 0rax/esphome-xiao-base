@@ -10,6 +10,5 @@ import:
     outputs: all
     filters: all
   - file: configs/pcbdraw.kibot.yaml
-  - file: configs/ibom.kibot.yaml
   - file: configs/pdfsch.kibot.yaml
   - file: configs/3dexport.kibot.yaml
