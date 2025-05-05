@@ -8,7 +8,7 @@
 	)
 	(paper "A4")
 	(title_block
-		(title "ESPHome XIAO Base")
+		(title "XIAO Base for ESPHome")
 		(date "2025-03-26")
 		(rev "v1.00")
 		(company "0rax")
@@ -5358,7 +5358,7 @@
 			(justify left mirror)
 		)
 	)
-	(gr_text "ESPHome XIAO Base"
+	(gr_text "XIAO Base for ESPHome"
 		(at 50.48 34.47 90)
 		(layer "B.SilkS")
 		(uuid "dd05f61c-a3f8-47fe-aee5-7c2c0cc045e3")

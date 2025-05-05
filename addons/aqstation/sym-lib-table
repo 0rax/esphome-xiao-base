@@ -1,0 +1,4 @@
+(sym_lib_table
+  (version 7)
+  (lib (name "Header")(type "KiCad")(uri "${KIPRJMOD}/libraries/local/symbols/Header.kicad_sym")(options "")(descr ""))
+)
