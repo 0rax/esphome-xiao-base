@@ -114,6 +114,28 @@ It was designed to be modular with 4 different headers / connector and should be
 [SensorBoard Front]: output/addons/sensorboard/img/sensorboard-top.png
 [SensorBoard Back]: output/addons/sensorboard/img/sensorboard-bottom.png
 
+A development board to test and develop ESPHome configurations using various breakout boards and sensors.
+
+It was designed to accept up to 3 sensors on the board using different headers and has 2 STEMMA QT / Qwiic connectors to expand it even further. This board can either be used as an add-on for the XIAO Base or as a standalone board by plugging a XIAO MCU directly.
+
+The different headers / connectors are:
+
+- Sensor 1
+  - Adafruit I2C Header
+  - SparkFun I2C Header
+  - Pimoroni I2C Garden
+- Sensor 2
+  - Adafruit I2C Header
+  - SparkFun I2C Header
+  - Pimoroni I2C Garden
+- Sensor 3
+  - Adafruit I2C Header
+  - BME680 Header
+  - RGB LED header
+- 2× STEMMA QT / Qwiic connectors
+
+Make sure to check out the pinouts and notes on the PCB for more information on which pins are used for what as well as the back of the PCB for more information on header compatibility.
+
 ## Notes
 
 ### Potential Modifications
