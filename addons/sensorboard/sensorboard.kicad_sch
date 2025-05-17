@@ -650,6 +650,283 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Header:Adafruit_BME680_Header"
+			(pin_names
+				(offset 1.27)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 10.414 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Adafruit_BME680_Header"
+				(at 0 -10.668 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Header:BME680_Header"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Adafruit_BME680_Header_1_1"
+				(rectangle
+					(start -2.54 8.89)
+					(end 3.81 -8.89)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -2.54 7.747)
+					(end -1.27 7.493)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 5.207)
+					(end -1.27 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 2.667)
+					(end -1.27 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 0.127)
+					(end -1.27 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 -2.413)
+					(end -1.27 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 -4.953)
+					(end -1.27 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 -7.493)
+					(end -1.27 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -6.35 7.62 0)
+					(length 3.81)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 5.08 0)
+					(length 3.81)
+					(name "3Vo"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 2.54 0)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 0 0)
+					(length 3.81)
+					(name "SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -2.54 0)
+					(length 3.81)
+					(name "SDO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -5.08 0)
+					(length 3.81)
+					(name "SDI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -7.62 0)
+					(length 3.81)
+					(name "CS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "Header:Adafruit_I2C_Header"
 			(pin_names
 				(offset 1.27)
@@ -910,283 +1187,6 @@
 					(at -6.35 -7.62 0)
 					(length 3.81)
 					(name "IO2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Header:BME680_Header"
-			(pin_names
-				(offset 1.27)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 10.414 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "BME680_Header"
-				(at 0 -10.668 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "AqSensor:BME680_Header"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "BME680_Header_1_1"
-				(rectangle
-					(start -2.54 8.89)
-					(end 3.81 -8.89)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -2.54 7.747)
-					(end -1.27 7.493)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 5.207)
-					(end -1.27 4.953)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 2.667)
-					(end -1.27 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 0.127)
-					(end -1.27 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 -2.413)
-					(end -1.27 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 -4.953)
-					(end -1.27 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 -7.493)
-					(end -1.27 -7.747)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -6.35 7.62 0)
-					(length 3.81)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 5.08 0)
-					(length 3.81)
-					(name "3Vo"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 2.54 0)
-					(length 3.81)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 0 0)
-					(length 3.81)
-					(name "SCK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 -2.54 0)
-					(length 3.81)
-					(name "SDO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 -5.08 0)
-					(length 3.81)
-					(name "SDI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 -7.62 0)
-					(length 3.81)
-					(name "CS"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2822,7 +2822,7 @@
 		)
 		(uuid "77c6fdc5-38c4-4d41-be4e-181f0a0edb37")
 	)
-	(text "BME680_Header compatible with:\n- DFRobot Fermion BME680: https://www.dfrobot.com/product-2143.html\n- Adafruit BME680: https://www.adafruit.com/product/3660\n- DFRobot Fermion BME688: https://www.dfrobot.com/product-2918.html\n- Adafruit BME688: https://www.adafruit.com/product/5046\n\nAdafruit_I2C_Header compatible with:\n- Adafruit Si7021: https://www.adafruit.com/product/3251\n- Adafruit MCP9808: https://www.adafruit.com/product/1782\n- Adafruit AHT20: https://www.adafruit.com/product/4566\n- DFRobot Fermion SHT40: https://www.dfrobot.com/product-2437.html\n- DFRobot Fermion SHT31: https://www.dfrobot.com/product-2013.html\n- DFRobot Fermion SHTC3: https://www.dfrobot.com/product-2436.html\n- DFRobot Fermion AHT20: https://www.dfrobot.com/product-2603.html\n- DFRobot Fermion SHT35: https://www.dfrobot.com/product-2016.html\n- BME680 Purple Breakout: https://www.studiopieters.nl/bme680-gas-sensor/\n\nSparkFun_I2C_Header compatible with:\n- Sparkfun Si7021: https://www.sparkfun.com/sparkfun-humidity-and-temperature-sensor-breakout-si7021.html\n- Sparkfun BME280 Qwiic: https://www.sparkfun.com/sparkfun-atmospheric-sensor-breakout-bme280-qwiic.html\n- Sparkfun ENS160 Qwiic: https://www.sparkfun.com/sparkfun-indoor-air-quality-sensor-ens160-qwiic.html\n- Sparkfun BME680 Qwiic: https://www.sparkfun.com/sparkfun-environmental-sensor-breakout-bme680-qwiic.html\n- Sparkfun BME688 Qwiic: https://www.sparkfun.com/sparkfun-environmental-sensor-bme688-qwiic.html\n- Soldered BME680 EasyC: https://soldered.com/product/enviromental-air-quality-sensor-bme680-breakout/\n- Soldered BMP180 EasyC: https://soldered.com/product/pressure-temperature-sensor-bmp180-breakout/\n- Soldered BME280 EasyC: https://soldered.com/product/enviromental-sensor-bme280-breakout/\n- Soldered SHTC3 EasyC: https://soldered.com/product/temperature-and-humidity-sensor-shtc3-breakout/\n\nPimoroni_I2CGarden_Header compatible with:\n- Pimoroni BME680 Breakout: https://shop.pimoroni.com/products/bme680-breakout\n- Pimoroni MICS6814 Breakout: https://shop.pimoroni.com/products/mics6814-gas-sensor-breakout\n\nST/Qwiic Connector compatible with\n- Qwiic sensors: https://www.sparkfun.com/qwiic\n- STEMMA QT sensors: https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma-qt\n- easyC sensors: https://soldered.com/easyC/"
+	(text "Adafruit_BME680_Header compatible with:\n- Adafruit BME280: https://www.adafruit.com/product/2652\n- Adafruit BME680: https://www.adafruit.com/product/3660\n- Adafruit BME688: https://www.adafruit.com/product/5046\n\nAdafruit_I2C_Header compatible with:\n- Adafruit Si7021: https://www.adafruit.com/product/3251\n- Adafruit MCP9808: https://www.adafruit.com/product/1782\n- Adafruit AHT20: https://www.adafruit.com/product/4566\n- DFRobot Fermion SHT40: https://www.dfrobot.com/product-2437.html\n- DFRobot Fermion SHT31: https://www.dfrobot.com/product-2013.html\n- DFRobot Fermion SHTC3: https://www.dfrobot.com/product-2436.html\n- DFRobot Fermion AHT20: https://www.dfrobot.com/product-2603.html\n- DFRobot Fermion SHT35: https://www.dfrobot.com/product-2016.html\n- BME680 Purple Breakout: https://www.studiopieters.nl/bme680-gas-sensor/\n\nSparkFun_I2C_Header compatible with:\n- Sparkfun Si7021: https://www.sparkfun.com/sparkfun-humidity-and-temperature-sensor-breakout-si7021.html\n- Sparkfun BME280 Qwiic: https://www.sparkfun.com/sparkfun-atmospheric-sensor-breakout-bme280-qwiic.html\n- Sparkfun ENS160 Qwiic: https://www.sparkfun.com/sparkfun-indoor-air-quality-sensor-ens160-qwiic.html\n- Sparkfun BME680 Qwiic: https://www.sparkfun.com/sparkfun-environmental-sensor-breakout-bme680-qwiic.html\n- Sparkfun BME688 Qwiic: https://www.sparkfun.com/sparkfun-environmental-sensor-bme688-qwiic.html\n- Soldered BME680 EasyC: https://soldered.com/product/enviromental-air-quality-sensor-bme680-breakout/\n- Soldered BMP180 EasyC: https://soldered.com/product/pressure-temperature-sensor-bmp180-breakout/\n- Soldered BME280 EasyC: https://soldered.com/product/enviromental-sensor-bme280-breakout/\n- Soldered SHTC3 EasyC: https://soldered.com/product/temperature-and-humidity-sensor-shtc3-breakout/\n\nPimoroni_I2CGarden_Header compatible with:\n- Pimoroni BME680 Breakout: https://shop.pimoroni.com/products/bme680-breakout\n- Pimoroni MICS6814 Breakout: https://shop.pimoroni.com/products/mics6814-gas-sensor-breakout\n\nST/Qwiic Connector compatible with\n- Qwiic sensors: https://www.sparkfun.com/qwiic\n- STEMMA QT sensors: https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma-qt\n- easyC sensors: https://soldered.com/easyC/"
 		(exclude_from_sim no)
 		(at 131.572 14.732 0)
 		(effects
@@ -2860,14 +2860,6 @@
 	(no_connect
 		(at 27.94 22.86)
 		(uuid "3ef12c16-03eb-4abf-87dc-2d2011422ae0")
-	)
-	(no_connect
-		(at 63.5 123.19)
-		(uuid "5fa17bdb-bf5b-4edb-a70b-d4ff26800bae")
-	)
-	(no_connect
-		(at 63.5 118.11)
-		(uuid "790d5c98-f0e3-45cc-82da-1aadef3f76a2")
 	)
 	(no_connect
 		(at 80.01 63.5)
@@ -3231,6 +3223,16 @@
 	)
 	(wire
 		(pts
+			(xy 63.5 123.19) (xy 71.12 123.19)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8adc4db5-b197-41ec-b91e-7c8dbc20ddca")
+	)
+	(wire
+		(pts
 			(xy 58.42 63.5) (xy 58.42 71.12)
 		)
 		(stroke
@@ -3318,6 +3320,16 @@
 			(type default)
 		)
 		(uuid "b017d510-573a-42a0-a21f-8a590e673341")
+	)
+	(wire
+		(pts
+			(xy 63.5 118.11) (xy 71.12 118.11)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b14bf00b-b8b9-46cc-94f9-3fffa6c9922c")
 	)
 	(wire
 		(pts
@@ -3699,6 +3711,16 @@
 		)
 		(uuid "825f49bd-09d3-4916-9d6e-a1dfec136d4d")
 	)
+	(label "D6"
+		(at 71.12 123.19 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "85cba4e2-e79d-4739-8e63-dc35fa125088")
+	)
 	(label "SDA"
 		(at 90.17 71.12 90)
 		(effects
@@ -3858,6 +3880,16 @@
 			(justify right bottom)
 		)
 		(uuid "d11ee3ab-a396-473f-b105-58a1d5e15040")
+	)
+	(label "D7"
+		(at 71.12 118.11 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "e193b55c-35cf-4cd3-b692-c58e08a6be69")
 	)
 	(label "SCL"
 		(at 55.88 80.01 270)
@@ -5368,7 +5400,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Header:BME680_Header")
+		(lib_id "Header:Adafruit_BME680_Header")
 		(at 57.15 125.73 180)
 		(unit 1)
 		(exclude_from_sim no)
@@ -5377,7 +5409,7 @@
 		(dnp no)
 		(uuid "68a55813-ba2d-459e-81e3-d282a7589430")
 		(property "Reference" "J11"
-			(at 53.594 113.284 0)
+			(at 53.34 113.284 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5385,7 +5417,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "BME680_Header"
+		(property "Value" "Adafruit_BME680_Header"
 			(at 53.34 115.316 0)
 			(effects
 				(font
@@ -5394,7 +5426,7 @@
 				(justify right)
 			)
 		)
-		(property "Footprint" "Header:BME680_Header"
+		(property "Footprint" "Header:Adafruit_BME680_Header"
 			(at 57.15 125.73 0)
 			(effects
 				(font

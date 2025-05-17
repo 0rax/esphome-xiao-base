@@ -1,10 +1,11 @@
-(footprint "BME680_Header"
+(footprint "Adafruit_BME680_Header"
 	(version 20241229)
 	(generator "pcbnew")
 	(generator_version "9.0")
 	(layer "F.Cu")
 	(property "Reference" "REF**"
-		(at 3.429 0 270)
+		(at 3.429 0 90)
+		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "0da0affe-9350-46db-9711-d27585ea93e6")
 		(effects
@@ -14,7 +15,7 @@
 			)
 		)
 	)
-	(property "Value" "BME680_Header"
+	(property "Value" "Adafruit_BME680_Header"
 		(at -3.81 0 270)
 		(layer "F.Fab")
 		(uuid "a1e46643-3b68-492f-be5c-6cea59b31b95")
@@ -370,7 +371,8 @@
 		(uuid "5f4a6c58-650d-44aa-989e-d6a74e28a3f1")
 	)
 	(fp_text user "GND"
-		(at -1.905 -2.54 270)
+		(at -1.905 -2.54 90)
+		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "219161cc-b549-4fe8-ba5a-ceaa5b57f07d")
 		(effects
@@ -380,8 +382,9 @@
 			)
 		)
 	)
-	(fp_text user "NC"
-		(at -1.905 2.54 270)
+	(fp_text user "IO1"
+		(at -1.905 2.54 90)
+		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "35d512c1-d440-4e64-9b35-2f5fc4f9cee7")
 		(effects
@@ -392,7 +395,8 @@
 		)
 	)
 	(fp_text user "SDA"
-		(at -1.905 5.08 270)
+		(at -1.905 5.08 90)
+		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "74eccaf6-4813-4079-83df-b1a89bc01343")
 		(effects
@@ -403,7 +407,8 @@
 		)
 	)
 	(fp_text user "NC"
-		(at -1.905 -7.62 270)
+		(at -1.905 -7.62 90)
+		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "7751e932-6147-4297-bcb6-7d8a66c0209d")
 		(effects
@@ -414,7 +419,8 @@
 		)
 	)
 	(fp_text user "SCL"
-		(at -1.905 0 270)
+		(at -1.905 0 90)
+		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "82d889a9-2005-4521-b834-773048df289c")
 		(effects
@@ -425,7 +431,8 @@
 		)
 	)
 	(fp_text user "VCC"
-		(at -1.905 -5.08 270)
+		(at -1.905 -5.08 90)
+		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "aa1d3cea-09b6-40a0-80d4-7e2e0fe03d1e")
 		(effects
@@ -435,8 +442,9 @@
 			)
 		)
 	)
-	(fp_text user "BME680 Header"
-		(at 1.905 0.01 270)
+	(fp_text user "Adafruit BME680 Header"
+		(at 1.905 0.01 90)
+		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "b703a4db-e23d-4a19-b3fd-77cbd512c978")
 		(effects
@@ -447,13 +455,14 @@
 			)
 		)
 	)
-	(fp_text user "NC"
-		(at -1.905 7.63 270)
+	(fp_text user "IO2"
+		(at -1.905 7.63 90)
+		(unlocked yes)
 		(layer "F.SilkS")
 		(uuid "ff522b2f-ec89-426f-bf2b-0857bdcdea1b")
 		(effects
 			(font
-				(size 0.6 0.6)
+				(size 0.6 0.5)
 				(thickness 0.12)
 			)
 		)

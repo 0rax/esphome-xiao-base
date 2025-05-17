@@ -730,19 +730,6 @@
 			(justify right bottom)
 		)
 	)
-	(fp_text user "BME680\nPurple"
-		(at 11.2 -6.73 0)
-		(unlocked yes)
-		(layer "F.Fab")
-		(uuid "34bccc66-5257-4893-a761-c9bfc9bdae0d")
-		(effects
-			(font
-				(size 1 1)
-				(thickness 0.15)
-			)
-			(justify left top)
-		)
-	)
 	(fp_text user "SHT31-D"
 		(at 15.24 -10.16 0)
 		(unlocked yes)
@@ -754,6 +741,19 @@
 				(thickness 0.15)
 			)
 			(justify right bottom)
+		)
+	)
+	(fp_text user "BME680\nPurple"
+		(at 11.2 -6.73 0)
+		(unlocked yes)
+		(layer "F.Fab")
+		(uuid "b33a3c2f-dd6e-4f73-87ff-2be8d1c56c9c")
+		(effects
+			(font
+				(size 1 1)
+				(thickness 0.15)
+			)
+			(justify left top)
 		)
 	)
 	(fp_text user "AHT20"
@@ -858,8 +858,9 @@
 		(uuid "eea64346-b647-4dfc-bc11-2bc9e91e31d8")
 		(members "0e000114-1780-4e15-b81d-208c2738a6ff" "2cec5c8e-320f-4633-b42d-1b5e05e5b526"
 			"838ed504-156c-47fb-93d8-698d69f3b0a8" "8fe42272-85f7-458e-be3a-ceb0898b28e0"
-			"947407c2-81f3-4bc2-bc1a-ed2175db4aa2" "da46cf06-213c-4003-a569-d925993055a2"
-			"e542bf71-42c6-4e74-ac69-a26a718cf681" "e5c4024e-09f6-4462-ad43-7c376263cae6"
+			"947407c2-81f3-4bc2-bc1a-ed2175db4aa2" "b33a3c2f-dd6e-4f73-87ff-2be8d1c56c9c"
+			"da46cf06-213c-4003-a569-d925993055a2" "e542bf71-42c6-4e74-ac69-a26a718cf681"
+			"e5c4024e-09f6-4462-ad43-7c376263cae6"
 		)
 	)
 	(embedded_fonts no)

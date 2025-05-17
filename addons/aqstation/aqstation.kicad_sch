@@ -595,8 +595,8 @@
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
-			(property "Reference" "J2"
-				(at 1.27 11.43 0)
+			(property "Reference" "J1"
+				(at 0 11.43 0)
 				(effects
 					(font
 						(size 1.27 1.27)
@@ -604,14 +604,14 @@
 				)
 			)
 			(property "Value" "Conn_02x06_Odd_Even"
-				(at 1.27 8.89 0)
+				(at 0 8.89 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "Connector_PinHeader_2.54mm:PinHeader_2x06_P2.54mm_Vertical"
+			(property "Footprint" "ESPHomeXIAOBase:XIAOBase_Header"
 				(at 0 0 0)
 				(effects
 					(font
@@ -983,7 +983,7 @@
 				(pin passive line
 					(at 10.16 0 180)
 					(length 3.81)
-					(name "D10"
+					(name "D3"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1001,7 +1001,7 @@
 				(pin passive line
 					(at 10.16 -2.54 180)
 					(length 3.81)
-					(name "D9"
+					(name "D8"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1019,7 +1019,7 @@
 				(pin passive line
 					(at 10.16 -5.08 180)
 					(length 3.81)
-					(name "D8"
+					(name "D9"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1037,7 +1037,7 @@
 				(pin passive line
 					(at 10.16 -7.62 180)
 					(length 3.81)
-					(name "CSN"
+					(name "D10"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1170,6 +1170,283 @@
 						)
 					)
 					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "Header:Adafruit_BME680_Header"
+			(pin_names
+				(offset 1.27)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "J"
+				(at 0 10.414 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "Adafruit_BME680_Header"
+				(at 0 -10.668 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" "Header:Adafruit_BME680_Header"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "Connector*:*_1x??_*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "Adafruit_BME680_Header_1_1"
+				(rectangle
+					(start -2.54 8.89)
+					(end 3.81 -8.89)
+					(stroke
+						(width 0.254)
+						(type default)
+					)
+					(fill
+						(type background)
+					)
+				)
+				(rectangle
+					(start -2.54 7.747)
+					(end -1.27 7.493)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 5.207)
+					(end -1.27 4.953)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 2.667)
+					(end -1.27 2.413)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 0.127)
+					(end -1.27 -0.127)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 -2.413)
+					(end -1.27 -2.667)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 -4.953)
+					(end -1.27 -5.207)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(rectangle
+					(start -2.54 -7.493)
+					(end -1.27 -7.747)
+					(stroke
+						(width 0.1524)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(pin passive line
+					(at -6.35 7.62 0)
+					(length 3.81)
+					(name "VIN"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 5.08 0)
+					(length 3.81)
+					(name "3Vo"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "2"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 2.54 0)
+					(length 3.81)
+					(name "GND"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "3"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 0 0)
+					(length 3.81)
+					(name "SCK"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "4"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -2.54 0)
+					(length 3.81)
+					(name "SDO"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -5.08 0)
+					(length 3.81)
+					(name "SDI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -7.62 0)
+					(length 3.81)
+					(name "CS"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "7"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1457,7 +1734,7 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "Header:BME680_Header"
+		(symbol "Header:DFRobot_BME680_Header"
 			(pin_names
 				(offset 1.27)
 			)
@@ -1465,22 +1742,22 @@
 			(in_bom yes)
 			(on_board yes)
 			(property "Reference" "J"
-				(at 0 10.414 0)
+				(at 0 9.144 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Value" "BME680_Header"
-				(at 0 -10.668 0)
+			(property "Value" "DFRobot_BME680_Header"
+				(at 0 -9.398 0)
 				(effects
 					(font
 						(size 1.27 1.27)
 					)
 				)
 			)
-			(property "Footprint" "Header:BME680_Header"
+			(property "Footprint" "Header:Adafruit_I2C_Header"
 				(at 0 0 0)
 				(effects
 					(font
@@ -1516,10 +1793,10 @@
 					(hide yes)
 				)
 			)
-			(symbol "BME680_Header_1_1"
+			(symbol "DFRobot_BME680_Header_1_1"
 				(rectangle
-					(start -2.54 8.89)
-					(end 3.81 -8.89)
+					(start -2.54 7.62)
+					(end 3.81 -7.62)
 					(stroke
 						(width 0.254)
 						(type default)
@@ -1529,8 +1806,8 @@
 					)
 				)
 				(rectangle
-					(start -2.54 7.747)
-					(end -1.27 7.493)
+					(start -2.54 6.477)
+					(end -1.27 6.223)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -1540,8 +1817,8 @@
 					)
 				)
 				(rectangle
-					(start -2.54 5.207)
-					(end -1.27 4.953)
+					(start -2.54 3.937)
+					(end -1.27 3.683)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -1551,8 +1828,8 @@
 					)
 				)
 				(rectangle
-					(start -2.54 2.667)
-					(end -1.27 2.413)
+					(start -2.54 1.397)
+					(end -1.27 1.143)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -1562,8 +1839,8 @@
 					)
 				)
 				(rectangle
-					(start -2.54 0.127)
-					(end -1.27 -0.127)
+					(start -2.54 -1.143)
+					(end -1.27 -1.397)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -1573,8 +1850,8 @@
 					)
 				)
 				(rectangle
-					(start -2.54 -2.413)
-					(end -1.27 -2.667)
+					(start -2.54 -3.683)
+					(end -1.27 -3.937)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -1584,19 +1861,8 @@
 					)
 				)
 				(rectangle
-					(start -2.54 -4.953)
-					(end -1.27 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 -7.493)
-					(end -1.27 -7.747)
+					(start -2.54 -6.223)
+					(end -1.27 -6.477)
 					(stroke
 						(width 0.1524)
 						(type default)
@@ -1606,262 +1872,7 @@
 					)
 				)
 				(pin passive line
-					(at -6.35 7.62 0)
-					(length 3.81)
-					(name "VIN"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 5.08 0)
-					(length 3.81)
-					(name "3Vo"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 2.54 0)
-					(length 3.81)
-					(name "GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 0 0)
-					(length 3.81)
-					(name "SCK"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 -2.54 0)
-					(length 3.81)
-					(name "SDO"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "5"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 -5.08 0)
-					(length 3.81)
-					(name "SDI"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "6"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at -6.35 -7.62 0)
-					(length 3.81)
-					(name "CS"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "7"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Header:Pimoroni_I2CGarden_Header"
-			(pin_names
-				(offset 1.27)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "J"
-				(at 0 7.874 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "Pimoroni_I2CGarden_Header"
-				(at 0 -8.128 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "Header:Pimoroni_I2CGarden_Header"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "Connector*:*_1x??_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "Pimoroni_I2CGarden_Header_1_1"
-				(rectangle
-					(start -2.54 6.35)
-					(end 3.81 -6.35)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type background)
-					)
-				)
-				(rectangle
-					(start -2.54 5.207)
-					(end -1.27 4.953)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 2.667)
-					(end -1.27 2.413)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 0.127)
-					(end -1.27 -0.127)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 -2.413)
-					(end -1.27 -2.667)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(rectangle
-					(start -2.54 -4.953)
-					(end -1.27 -5.207)
-					(stroke
-						(width 0.1524)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin passive line
-					(at -6.35 5.08 0)
+					(at -6.35 6.35 0)
 					(length 3.81)
 					(name "VCC"
 						(effects
@@ -1879,9 +1890,9 @@
 					)
 				)
 				(pin passive line
-					(at -6.35 2.54 0)
+					(at -6.35 3.81 0)
 					(length 3.81)
-					(name "SDA"
+					(name "GND"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1897,9 +1908,9 @@
 					)
 				)
 				(pin passive line
-					(at -6.35 0 0)
+					(at -6.35 1.27 0)
 					(length 3.81)
-					(name "SCL"
+					(name "MO"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1915,9 +1926,9 @@
 					)
 				)
 				(pin passive line
-					(at -6.35 -2.54 0)
+					(at -6.35 -1.27 0)
 					(length 3.81)
-					(name "IO1"
+					(name "CS"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1933,9 +1944,9 @@
 					)
 				)
 				(pin passive line
-					(at -6.35 -5.08 0)
+					(at -6.35 -3.81 0)
 					(length 3.81)
-					(name "GND"
+					(name "SCK"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -1943,6 +1954,24 @@
 						)
 					)
 					(number "5"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+				(pin passive line
+					(at -6.35 -6.35 0)
+					(length 3.81)
+					(name "MI"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "6"
 						(effects
 							(font
 								(size 1.27 1.27)
@@ -2684,7 +2713,7 @@
 		)
 		(uuid "81c8dd26-b98a-4553-9f79-ad6a3b5b225f")
 	)
-	(text "BME680_Header compatible with:\n- DFRobot Fermion BME680: https://www.dfrobot.com/product-2143.html\n- Adafruit BME680: https://www.adafruit.com/product/3660\n- DFRobot Fermion BME688: https://www.dfrobot.com/product-2918.html\n- Adafruit BME688: https://www.adafruit.com/product/5046\n\nAdafruit_I2C_Header compatible with:\n- Adafruit Si7021: https://www.adafruit.com/product/3251\n- Adafruit MCP9808: https://www.adafruit.com/product/1782\n- Adafruit AHT20: https://www.adafruit.com/product/4566\n- DFRobot Fermion SHT40: https://www.dfrobot.com/product-2437.html\n- DFRobot Fermion SHT31: https://www.dfrobot.com/product-2013.html\n- DFRobot Fermion SHTC3: https://www.dfrobot.com/product-2436.html\n- DFRobot Fermion AHT20: https://www.dfrobot.com/product-2603.html\n- DFRobot Fermion SHT35: https://www.dfrobot.com/product-2016.html\n- BME680 Purple Breakout: https://www.studiopieters.nl/bme680-gas-sensor/\n\nPimoroni_I2CGarden_Header compatible with:\n- Pimoroni BME680 Breakout: https://shop.pimoroni.com/products/bme680-breakout\n- Pimoroni MICS6814 Breakout: https://shop.pimoroni.com/products/mics6814-gas-sensor-breakout\n\nST/Qwiic Connector compatible with\n- Qwiic sensors: https://www.sparkfun.com/qwiic\n- STEMMA QT sensors: https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma-qt\n- easyC sensors: https://soldered.com/easyC/\n\nRGB Header compatible with:\n- any 5V WS2812B style LED strip (must be 3.3V logic tolerant)"
+	(text "Adafruit_I2C_Header compatible with:\n- Adafruit Si7021: https://www.adafruit.com/product/3251\n- Adafruit MCP9808: https://www.adafruit.com/product/1782\n- Adafruit AHT20: https://www.adafruit.com/product/4566\n- DFRobot Fermion SHT40: https://www.dfrobot.com/product-2437.html\n- DFRobot Fermion SHT31: https://www.dfrobot.com/product-2013.html\n- DFRobot Fermion SHTC3: https://www.dfrobot.com/product-2436.html\n- DFRobot Fermion AHT20: https://www.dfrobot.com/product-2603.html\n- DFRobot Fermion SHT35: https://www.dfrobot.com/product-2016.html\n- BME680 Purple Breakout: https://www.studiopieters.nl/bme680-gas-sensor/\n\nAdafruit_BME680_Header compatible with:\n- Adafruit BME280: https://www.adafruit.com/product/2652\n- Adafruit BME680: https://www.adafruit.com/product/3660\n- Adafruit BME688: https://www.adafruit.com/product/5046\n\nDFRobot_BME680_Header compatible with:\n- DFRobot Fermion BME680: https://www.dfrobot.com/product-2143.html\n- DFRobot Fermion BME688: https://www.dfrobot.com/product-2918.html\n(Gravity breakouts do stick out a bit)\n\nST/Qwiic Connector compatible with\n- Qwiic sensors: https://www.sparkfun.com/qwiic\n- STEMMA QT sensors: https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma-qt\n- easyC sensors: https://soldered.com/easyC/\n\nRGB Header compatible with:\n- any 5V WS2812B style LED strip (must be 3.3V logic tolerant)"
 		(exclude_from_sim no)
 		(at 125.222 14.732 0)
 		(effects
@@ -2722,20 +2751,12 @@
 		(uuid "26951be0-6b03-4bb9-877d-b36e63de3e63")
 	)
 	(no_connect
-		(at 49.53 62.23)
-		(uuid "07b2189a-dd19-4fe5-a52c-5c885f56f794")
-	)
-	(no_connect
 		(at 80.01 27.94)
 		(uuid "1d5acce3-4a4f-4239-a9b2-dfdc168c659f")
 	)
 	(no_connect
-		(at 59.69 88.9)
-		(uuid "5fa17bdb-bf5b-4edb-a70b-d4ff26800bae")
-	)
-	(no_connect
-		(at 64.77 88.9)
-		(uuid "790d5c98-f0e3-45cc-82da-1aadef3f76a2")
+		(at 49.53 60.96)
+		(uuid "62560708-388e-4b94-ab16-c9c25f1d95ef")
 	)
 	(no_connect
 		(at 49.53 88.9)
@@ -2787,16 +2808,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 78.74) (xy 29.21 78.74)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "1292601c-1f1b-4198-ac62-16220323bcb3")
-	)
-	(wire
-		(pts
 			(xy 100.33 35.56) (xy 104.14 35.56)
 		)
 		(stroke
@@ -2827,13 +2838,13 @@
 	)
 	(wire
 		(pts
-			(xy 59.69 69.85) (xy 59.69 62.23)
+			(xy 64.77 88.9) (xy 64.77 96.52)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "1f44ad48-7cbd-4b97-bed9-f7c7e6eb2db2")
+		(uuid "2228a328-4e32-4ef5-b7a9-7edf0483dc62")
 	)
 	(wire
 		(pts
@@ -2844,6 +2855,26 @@
 			(type default)
 		)
 		(uuid "28c6985e-59c4-4b0d-bfd5-f73d1894eb23")
+	)
+	(wire
+		(pts
+			(xy 40.64 69.85) (xy 33.02 69.85)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "28f8fa21-720b-4ca3-9ee2-21bf07b9da28")
+	)
+	(wire
+		(pts
+			(xy 62.23 68.58) (xy 62.23 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "2eb75234-aff2-4344-9541-cfdf3a7f64e2")
 	)
 	(wire
 		(pts
@@ -2917,46 +2948,6 @@
 	)
 	(wire
 		(pts
-			(xy 36.83 76.2) (xy 29.21 76.2)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "54c406c5-9cb0-4942-afa4-879538c40c33")
-	)
-	(wire
-		(pts
-			(xy 36.83 73.66) (xy 29.21 73.66)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65c82b1d-d3ab-4ea2-8363-a9cdadd75b5e")
-	)
-	(wire
-		(pts
-			(xy 57.15 69.85) (xy 57.15 62.23)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "68e0d458-ca73-46eb-8301-f0f1f27d3add")
-	)
-	(wire
-		(pts
-			(xy 62.23 62.23) (xy 62.23 69.85)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "6920a80a-23c5-42f3-ad5c-89438c20a8b1")
-	)
-	(wire
-		(pts
 			(xy 46.99 35.56) (xy 54.61 35.56)
 		)
 		(stroke
@@ -2964,6 +2955,16 @@
 			(type default)
 		)
 		(uuid "6aebe64c-aae0-4d4d-9cd9-5f06189bd323")
+	)
+	(wire
+		(pts
+			(xy 33.02 72.39) (xy 40.64 72.39)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "71bf8dac-283f-4377-ad08-f00e6fbd93ab")
 	)
 	(wire
 		(pts
@@ -2997,6 +2998,16 @@
 	)
 	(wire
 		(pts
+			(xy 57.15 68.58) (xy 57.15 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "8a54421f-d621-4519-a923-dc5a1c226c6c")
+	)
+	(wire
+		(pts
 			(xy 104.14 27.94) (xy 104.14 29.21)
 		)
 		(stroke
@@ -3017,7 +3028,7 @@
 	)
 	(wire
 		(pts
-			(xy 64.77 62.23) (xy 64.77 69.85)
+			(xy 33.02 77.47) (xy 40.64 77.47)
 		)
 		(stroke
 			(width 0)
@@ -3047,6 +3058,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 68.58) (xy 59.69 60.96)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a457f47b-a625-4db4-9afc-824066772fd3")
+	)
+	(wire
+		(pts
 			(xy 46.99 33.02) (xy 54.61 33.02)
 		)
 		(stroke
@@ -3057,6 +3078,16 @@
 	)
 	(wire
 		(pts
+			(xy 59.69 96.52) (xy 59.69 88.9)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "a68d6d4b-0605-4a36-b7e9-761fb02258b0")
+	)
+	(wire
+		(pts
 			(xy 19.05 30.48) (xy 26.67 30.48)
 		)
 		(stroke
@@ -3064,6 +3095,16 @@
 			(type default)
 		)
 		(uuid "a94c75ea-3eb9-45ab-a66b-4bc6160b03b9")
+	)
+	(wire
+		(pts
+			(xy 40.64 74.93) (xy 33.02 74.93)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b2ba4756-e11b-4095-835b-98843c3b5ae7")
 	)
 	(wire
 		(pts
@@ -3097,6 +3138,16 @@
 	)
 	(wire
 		(pts
+			(xy 64.77 60.96) (xy 64.77 68.58)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "db126551-f892-4cf5-ade1-3dd0140058de")
+	)
+	(wire
+		(pts
 			(xy 26.67 24.13) (xy 26.67 25.4)
 		)
 		(stroke
@@ -3125,26 +3176,6 @@
 		)
 		(uuid "06c189fa-cfcd-45fc-a9e4-66275d8d86be")
 	)
-	(label "D10"
-		(at 36.83 78.74 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0b05ede7-314e-4533-9621-53cbd7859be3")
-	)
-	(label "SDA"
-		(at 36.83 73.66 180)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify right bottom)
-		)
-		(uuid "0dd2ad8a-95e9-4f5d-82b1-ba3bcbbebf02")
-	)
 	(label "RX"
 		(at 19.05 33.02 0)
 		(effects
@@ -3165,7 +3196,27 @@
 		)
 		(uuid "18a47efe-350b-4c8e-8450-67d0ff9852fb")
 	)
-	(label "D8"
+	(label "EN"
+		(at 64.77 96.52 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "2078a095-3c1c-4971-a4fb-22c4abec8bdb")
+	)
+	(label "ADDR"
+		(at 62.23 68.58 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "20d58567-de3d-45ae-b260-95ce492ab4ae")
+	)
+	(label "LEDIO"
 		(at 88.9 90.17 0)
 		(effects
 			(font
@@ -3175,7 +3226,7 @@
 		)
 		(uuid "2279e501-f2f1-4613-ab9c-e992104a02ba")
 	)
-	(label "D10"
+	(label "EN"
 		(at 54.61 27.94 180)
 		(effects
 			(font
@@ -3184,16 +3235,6 @@
 			(justify right bottom)
 		)
 		(uuid "2ab5c1c1-fa53-4916-b6b4-2e06d55c14c4")
-	)
-	(label "SDA"
-		(at 59.69 69.85 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "3d26a346-fbc9-4dc5-b6c4-c4b82986df36")
 	)
 	(label "SCL"
 		(at 81.28 60.96 0)
@@ -3204,16 +3245,6 @@
 			(justify left bottom)
 		)
 		(uuid "401cd094-597b-49db-8d90-75dffe0c90ee")
-	)
-	(label "D10"
-		(at 64.77 69.85 90)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left bottom)
-		)
-		(uuid "4a308317-0819-4dba-8638-2d49806b41d2")
 	)
 	(label "TX"
 		(at 73.66 30.48 0)
@@ -3235,6 +3266,36 @@
 		)
 		(uuid "5016de2b-1cc0-476b-ab07-463667be86f7")
 	)
+	(label "SCL"
+		(at 40.64 74.93 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "513f442e-6ddc-444e-b20a-92737332839b")
+	)
+	(label "EN"
+		(at 64.77 68.58 90)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left bottom)
+		)
+		(uuid "51461f4c-8253-415a-a0b5-9d790ac85be6")
+	)
+	(label "SDA"
+		(at 40.64 69.85 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right bottom)
+		)
+		(uuid "52ae4f89-8c10-411c-a3a2-e360da1c1298")
+	)
 	(label "SDA"
 		(at 19.05 30.48 0)
 		(effects
@@ -3245,7 +3306,7 @@
 		)
 		(uuid "53d87cb9-b303-43df-a134-2945f9c1875d")
 	)
-	(label "D3"
+	(label "SET"
 		(at 54.61 35.56 180)
 		(effects
 			(font
@@ -3255,7 +3316,7 @@
 		)
 		(uuid "61c58e61-cfc1-48b0-846a-bcae15e9daa5")
 	)
-	(label "D8"
+	(label "LEDIO"
 		(at 54.61 33.02 180)
 		(effects
 			(font
@@ -3265,27 +3326,27 @@
 		)
 		(uuid "62635dc8-a9cc-4588-998c-a13a32cb6d4c")
 	)
-	(label "D9"
-		(at 62.23 69.85 90)
+	(label "SCL"
+		(at 57.15 68.58 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "a450767c-24b3-4caa-ba39-64343c5e9165")
+		(uuid "73a126f6-bf9c-4c26-b04f-085e91f8d87c")
 	)
-	(label "SCL"
-		(at 36.83 76.2 180)
+	(label "ADDR"
+		(at 40.64 77.47 180)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify right bottom)
 		)
-		(uuid "b0bacedc-c23e-493b-b811-c6c7c28828e7")
+		(uuid "b5354539-2cfb-4190-a1b1-75314b1a42f4")
 	)
-	(label "D3"
+	(label "SET"
 		(at 114.3 35.56 180)
 		(effects
 			(font
@@ -3295,7 +3356,7 @@
 		)
 		(uuid "bc70c943-3bf0-4d63-b4ef-e8b767d79164")
 	)
-	(label "D9"
+	(label "ADDR"
 		(at 54.61 30.48 180)
 		(effects
 			(font
@@ -3335,81 +3396,35 @@
 		)
 		(uuid "d110309a-ba1c-4897-8348-bc3cdf6ff550")
 	)
-	(label "SCL"
-		(at 57.15 69.85 90)
+	(label "ADDR"
+		(at 59.69 96.52 90)
 		(effects
 			(font
 				(size 1.27 1.27)
 			)
 			(justify left bottom)
 		)
-		(uuid "ede614ae-95c5-4fcc-81f3-415639885087")
+		(uuid "f5a76676-dc12-4eb6-a424-29474b6d869a")
 	)
-	(symbol
-		(lib_id "power:+3.3V")
-		(at 29.21 71.12 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "074ec3ef-853f-4468-b03f-580e1b5dd376")
-		(property "Reference" "#PWR051"
-			(at 25.4 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
+	(label "SDA"
+		(at 59.69 68.58 90)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify left bottom)
 		)
-		(property "Value" "+3.3V"
-			(at 32.385 71.12 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
+		(uuid "f9ed6e2b-96a6-44a2-b2a9-9521113fe45d")
+	)
+	(label "EN"
+		(at 40.64 72.39 180)
+		(effects
+			(font
+				(size 1.27 1.27)
 			)
+			(justify right bottom)
 		)
-		(property "Footprint" ""
-			(at 29.21 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 29.21 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 29.21 71.12 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "666038d0-3ad3-4034-9d4c-4bdea0c605fd")
-		)
-		(instances
-			(project "aqstation"
-				(path "/76cb4e9e-c848-4f96-8850-cfdf3c15cc6a"
-					(reference "#PWR051")
-					(unit 1)
-				)
-			)
-		)
+		(uuid "fa4c64d6-7212-416a-8d04-9be25b3915df")
 	)
 	(symbol
 		(lib_id "power:+5V")
@@ -3619,16 +3634,16 @@
 	)
 	(symbol
 		(lib_id "power:+3.3V")
-		(at 52.07 62.23 0)
+		(at 52.07 60.96 0)
 		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
-		(uuid "298fe995-f60a-4ff0-899d-c8e5c5ecef77")
-		(property "Reference" "#PWR064"
-			(at 52.07 58.42 0)
+		(uuid "23c8e4dc-1f7d-47fe-b9e1-5acf2f655a8a")
+		(property "Reference" "#PWR03"
+			(at 52.07 57.15 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3637,7 +3652,7 @@
 			)
 		)
 		(property "Value" "+3.3V"
-			(at 52.07 65.405 90)
+			(at 52.07 64.135 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3646,7 +3661,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 52.07 62.23 0)
+			(at 52.07 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3655,7 +3670,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 52.07 62.23 0)
+			(at 52.07 60.96 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3664,7 +3679,73 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
-			(at 52.07 62.23 0)
+			(at 52.07 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "44489f3d-975a-4486-8a14-a6cfde4348b6")
+		)
+		(instances
+			(project "aqstation"
+				(path "/76cb4e9e-c848-4f96-8850-cfdf3c15cc6a"
+					(reference "#PWR03")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:+3.3V")
+		(at 33.02 64.77 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "298fe995-f60a-4ff0-899d-c8e5c5ecef77")
+		(property "Reference" "#PWR064"
+			(at 29.21 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "+3.3V"
+			(at 36.195 64.77 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" ""
+			(at 33.02 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 33.02 64.77 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"+3.3V\""
+			(at 33.02 64.77 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3746,6 +3827,73 @@
 			(project "aqstation"
 				(path "/76cb4e9e-c848-4f96-8850-cfdf3c15cc6a"
 					(reference "#PWR09")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "power:GND")
+		(at 54.61 60.96 0)
+		(mirror y)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "368b2740-3e5d-4e11-b179-e205a90eb0e4")
+		(property "Reference" "#PWR04"
+			(at 54.61 67.31 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "GND"
+			(at 54.61 64.135 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
+			)
+		)
+		(property "Footprint" ""
+			(at 54.61 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 54.61 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
+			(at 54.61 60.96 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "9a782322-2979-49e3-b762-c9a720d7a5b1")
+		)
+		(instances
+			(project "aqstation"
+				(path "/76cb4e9e-c848-4f96-8850-cfdf3c15cc6a"
+					(reference "#PWR04")
 					(unit 1)
 				)
 			)
@@ -4122,7 +4270,7 @@
 		)
 	)
 	(symbol
-		(lib_id "Header:BME680_Header")
+		(lib_id "Header:Adafruit_BME680_Header")
 		(at 57.15 82.55 90)
 		(unit 1)
 		(exclude_from_sim no)
@@ -4138,7 +4286,7 @@
 				)
 			)
 		)
-		(property "Value" "BME680_Header"
+		(property "Value" "Adafruit_BME680_Header"
 			(at 57.15 76.962 90)
 			(effects
 				(font
@@ -4146,7 +4294,7 @@
 				)
 			)
 		)
-		(property "Footprint" "Header:BME680_Header"
+		(property "Footprint" "Header:Adafruit_BME680_Header"
 			(at 57.15 82.55 0)
 			(effects
 				(font
@@ -4349,6 +4497,88 @@
 		)
 	)
 	(symbol
+		(lib_id "Header:Adafruit_I2C_Header")
+		(at 57.15 54.61 90)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(uuid "7f492b4f-4aa4-493e-8b3e-03e3b8809dd3")
+		(property "Reference" "J4"
+			(at 57.277 46.863 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "Adafruit_I2C_Header"
+			(at 57.023 49.149 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Header:Adafruit_I2C_Header"
+			(at 57.15 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 57.15 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" ""
+			(at 57.15 54.61 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "5"
+			(uuid "0c63ea1c-b650-4b6c-ab97-5e9b50edef34")
+		)
+		(pin "6"
+			(uuid "0f4a89c2-d029-4a8a-9496-74dd867f874a")
+		)
+		(pin "7"
+			(uuid "51ca6cf7-1072-4af1-8d75-08e232f94fe3")
+		)
+		(pin "4"
+			(uuid "6671c0ba-6aae-45e9-8513-425c1e147351")
+		)
+		(pin "3"
+			(uuid "d6f947fe-ddfb-47a2-a747-ced791647b3c")
+		)
+		(pin "2"
+			(uuid "8fab9d0c-63bf-446f-96dc-9afa039b99fc")
+		)
+		(pin "1"
+			(uuid "c60a9366-601f-4b16-b779-af80138facec")
+		)
+		(instances
+			(project ""
+				(path "/76cb4e9e-c848-4f96-8850-cfdf3c15cc6a"
+					(reference "J4")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 100.33 24.13 90)
 		(mirror x)
@@ -4417,8 +4647,7 @@
 	)
 	(symbol
 		(lib_id "power:GND")
-		(at 54.61 62.23 0)
-		(mirror y)
+		(at 33.02 67.31 90)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -4426,7 +4655,7 @@
 		(dnp no)
 		(uuid "9705a00f-0d0d-4d85-b16c-e0daec77615e")
 		(property "Reference" "#PWR065"
-			(at 54.61 68.58 0)
+			(at 39.37 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4435,7 +4664,7 @@
 			)
 		)
 		(property "Value" "GND"
-			(at 54.61 65.405 90)
+			(at 36.195 67.31 90)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4444,7 +4673,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 54.61 62.23 0)
+			(at 33.02 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4453,7 +4682,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 54.61 62.23 0)
+			(at 33.02 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4462,7 +4691,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 54.61 62.23 0)
+			(at 33.02 67.31 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4941,85 +5170,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Header:Pimoroni_I2CGarden_Header")
-		(at 22.86 76.2 0)
-		(mirror y)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "d6a9ea6c-ce8e-4579-bff2-5882f50fe88c")
-		(property "Reference" "J4"
-			(at 19.304 65.024 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Value" "Pimoroni_I2CGarden_Header"
-			(at 19.304 67.564 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" "Header:Pimoroni_I2CGarden_Header"
-			(at 22.86 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 22.86 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Generic connector, single row, 01x05, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 22.86 76.2 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "5"
-			(uuid "ab7fc26e-38d6-485a-822a-65af5b383063")
-		)
-		(pin "4"
-			(uuid "ffeb197d-a9b2-4a29-99b3-ffa2ed34ced9")
-		)
-		(pin "3"
-			(uuid "2d6746a7-4d33-4987-be39-c01cdb45bd2d")
-		)
-		(pin "2"
-			(uuid "1101517c-4293-4b87-ad1e-8205d4207806")
-		)
-		(pin "1"
-			(uuid "8bc91278-60a9-4e06-98ae-1ef6c122b633")
-		)
-		(instances
-			(project ""
-				(path "/76cb4e9e-c848-4f96-8850-cfdf3c15cc6a"
-					(reference "J4")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 46.99 21.59 90)
 		(unit 1)
@@ -5153,72 +5303,6 @@
 		)
 	)
 	(symbol
-		(lib_id "power:GND")
-		(at 29.21 81.28 90)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(uuid "f08c8701-3cd4-46dd-bd20-45143a4c463c")
-		(property "Reference" "#PWR050"
-			(at 35.56 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 32.385 81.28 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify right)
-			)
-		)
-		(property "Footprint" ""
-			(at 29.21 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 29.21 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 29.21 81.28 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "29d6a99b-f5b0-4866-8b0d-20c394e9ec89")
-		)
-		(instances
-			(project "aqstation"
-				(path "/76cb4e9e-c848-4f96-8850-cfdf3c15cc6a"
-					(reference "#PWR050")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:+5V")
 		(at 96.52 86.36 90)
 		(unit 1)
@@ -5286,8 +5370,9 @@
 		)
 	)
 	(symbol
-		(lib_id "Header:Adafruit_I2C_Header")
-		(at 57.15 55.88 90)
+		(lib_id "Header:DFRobot_BME680_Header")
+		(at 26.67 71.12 0)
+		(mirror y)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
@@ -5295,23 +5380,23 @@
 		(dnp no)
 		(uuid "fc780356-2af2-43a8-beb8-3aab10fb357b")
 		(property "Reference" "J3"
-			(at 57.15 47.498 90)
+			(at 18.288 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Value" "Adafruit_I2C_Header"
-			(at 57.15 50.038 90)
+		(property "Value" "DFRobot_BME680_Header"
+			(at 20.828 71.12 90)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
 			)
 		)
-		(property "Footprint" "Header:Adafruit_I2C_Header"
-			(at 57.15 55.88 0)
+		(property "Footprint" "Header:DFRobot_BME680_Header"
+			(at 26.67 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5320,7 +5405,7 @@
 			)
 		)
 		(property "Datasheet" "~"
-			(at 57.15 55.88 0)
+			(at 26.67 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5329,7 +5414,7 @@
 			)
 		)
 		(property "Description" "Generic connector, single row, 01x07, script generated (kicad-library-utils/schlib/autogen/connector/)"
-			(at 57.15 55.88 0)
+			(at 26.67 71.12 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -5342,9 +5427,6 @@
 		)
 		(pin "2"
 			(uuid "b68e3fa6-8b6e-4f2b-b4ab-447d9376683f")
-		)
-		(pin "7"
-			(uuid "8e3eb0dc-7980-4be1-9c6d-c95d13ec6909")
 		)
 		(pin "4"
 			(uuid "f01bec3d-3f6e-4951-a70d-a241afaef07e")

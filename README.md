@@ -78,32 +78,34 @@ They should be easily modifiable to fit any ESPHome compatible XIAO microcontrol
 [AQStation Front]: output/addons/aqstation/img/aqstation-top.png
 [AQStation Back]: output/addons/aqstation/img/aqstation-bottom.png
 
-An indoor air quality station fit to accept a [Plantower PMSA003](https://plantower.com/en/products_33/77.html) particulate matter sensor and a range of temperature and / or humidity sensors.
+An indoor air quality station fit to accept a [Plantower PMSA003](https://plantower.com/en/products_33/77.html) particulate matter sensor and a [Bosch BME688](https://www.bosch-sensortec.com/products/environmental-sensors/gas-sensors/bme688/) gas, temperature, humidity and pressure sensor.
 
-It was designed to be modular with 4 different headers / connector and should be compatible with:
+In order to support as many breakouts as possible, the PCB was designed to be modular with 3 different headers. Here is a list of what should be compatible with the PCB:
 
-- Adafruit I2C Header
-  - [Adafruit Si7021](https://www.adafruit.com/product/3251)
-  - [Adafruit MCP9808](https://www.adafruit.com/product/1782)
-  - [Adafruit AHT20](https://www.adafruit.com/product/4566)
-  - [DFRobot Fermion SHT40](https://www.dfrobot.com/product-2437.html)
-  - [DFRobot Fermion SHT31](https://www.dfrobot.com/product-2013.html)
-  - [DFRobot Fermion SHTC3](https://www.dfrobot.com/product-2436.html)
-  - [DFRobot Fermion AHT20](https://www.dfrobot.com/product-2603.html)
-  - [DFRobot Fermion SHT35](https://www.dfrobot.com/product-2016.html)
-  - [BME680 Purple Breakout](https://www.studiopieters.nl/bme680-gas-sensor/)
-- BME680 Header
-  - [DFRobot Fermion BME680](https://www.dfrobot.com/product-2143.html)
+- Adafruit BME680 Header
+  - [Adafruit BME280](https://www.adafruit.com/product/2652)
   - [Adafruit BME680](https://www.adafruit.com/product/3660)
-  - [DFRobot Fermion BME688](https://www.dfrobot.com/product-2918.html)
   - [Adafruit BME688](https://www.adafruit.com/product/5046)
-- Pimoroni I2C Garden
-  - [Pimoroni BME680 Breakout](https://shop.pimoroni.com/products/bme680-breakout)
-  - [Pimoroni MICS6814 Breakout](https://shop.pimoroni.com/products/mics6814-gas-sensor-breakout)
-- ST/Qwiic Connector
-  - Any [Qwiic](https://www.sparkfun.com/qwiic) compatible sensor
-  - Any [STEMMA QT](https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma-qt) compatible sensor
-  - Any [easyC](https://soldered.com/easyC/) compatible sensor
+- Adafruit I2C Header
+  - [BME680 Purple Breakout](https://www.studiopieters.nl/bme680-gas-sensor/)
+  - A lot of other sensor breakouts share compatible pinouts that are not from the BME680 family such as:
+    - [Adafruit Si7021](https://www.adafruit.com/product/3251)
+    - [Adafruit MCP9808](https://www.adafruit.com/product/1782)
+    - [Adafruit AHT20](https://www.adafruit.com/product/4566)
+    - [DFRobot Fermion SHT40](https://www.dfrobot.com/product-2437.html)
+    - [DFRobot Fermion SHT31](https://www.dfrobot.com/product-2013.html)
+    - [DFRobot Fermion SHTC3](https://www.dfrobot.com/product-2436.html)
+    - [DFRobot Fermion AHT20](https://www.dfrobot.com/product-2603.html)
+    - [DFRobot Fermion SHT35](https://www.dfrobot.com/product-2016.html)
+- DFRobot BME680 Header
+  - [DFRobot Fermion BME680](https://www.dfrobot.com/product-2143.html)
+  - [DFRobot Fermion BME688](https://www.dfrobot.com/product-2918.html)
+
+The PCB also includes a STEMMA QT / Qwiic connector to further expand the capabilities of the device, this header is compatible with the following ecosystems:
+
+- [Adafruit STEMMA QT](https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma-qt)
+- [SparkFun Qwiic](https://www.sparkfun.com/qwiic)
+- [Soldered easyC](https://soldered.com/easyC/)
 
 ### SensorBoard
 
@@ -130,11 +132,12 @@ The different headers / connectors are:
   - Pimoroni I2C Garden
 - Sensor 3
   - Adafruit I2C Header
-  - BME680 Header
+  - Adafruit BME680 Header
   - RGB LED header
 - 2× STEMMA QT / Qwiic connectors
 
 Make sure to check out the pinouts and notes on the PCB for more information on which pins are used for what as well as the back of the PCB for more information on header compatibility.
+A more complete compatibility list can be found in the schematic files.
 
 ## Notes
 

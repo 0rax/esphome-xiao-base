@@ -3,13 +3,20 @@ kibot:
   version: 1
 
 outputs:
-  - name: "schematics_pdf"
-    comment: "Print schematics PDF"
+  - name: schematics_pdf
+    comment: Print schematics PDF
     type: pdf_sch_print
     dir: schematics
     options:
       color_theme: '@SCH_COLOR_THEME@'
       background_color: false
+  - name: schematics_svg
+    comment: Print schematics SVG
+    type: svg_sch_print
+    dir: schematics
+    options:
+      color_theme: '@SCH_COLOR_THEME@'
+      background_color: true
 
 ...
 definitions:
