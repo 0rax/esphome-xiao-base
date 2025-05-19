@@ -5,7 +5,7 @@
 	(uuid "76cb4e9e-c848-4f96-8850-cfdf3c15cc6a")
 	(paper "A4")
 	(title_block
-		(title "ESPHome XIAO Base")
+		(title "XIAO Base for ESPHome")
 		(date "2025-03-26")
 		(rev "v1.00")
 		(company "0rax")

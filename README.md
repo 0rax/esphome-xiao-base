@@ -1,10 +1,10 @@
-# ESPHome XIAO Base
+# XIAO Base for ESPHome
 
-[![Release]( https://img.shields.io/github/v/release/0rax/esphome-xiao-base?display_name=release&style=for-the-badge&logo=github&logoColor=white&labelColor=grey)](https://github.com/0rax/esphome-xiao-base/releases/latest)
+[![Release](https://img.shields.io/github/v/release/0rax/esphome-xiao-base?display_name=release&style=for-the-badge&logo=github&logoColor=white&labelColor=grey)](https://github.com/0rax/esphome-xiao-base/releases/latest)
 [![License](https://img.shields.io/badge/License-CERN--OHL--S--2.0-0099B0?style=for-the-badge&logo=opensourcehardware&logoColor=white)](/LICENSE)
 [![KiCad](https://img.shields.io/badge/KiCad-v9-orange?style=for-the-badge&logo=kicad&logoColor=white&logoSize=auto)](https://www.kicad.org/)
 
-The ESPHome XIAO Base is a custom PCB designed to be used with the [ESPHome](https://esphome.io/) firmware as a base for creating new sensors.
+The XIAO Base for ESPHome is a custom PCB designed to be used with the [ESPHome](https://esphome.io/) firmware as a base for creating new sensors.
 
 It was made as a carrier board for the XIAO series of microcontrollers with an OLED display and three switches while providing an easy-to-access header on the back for standard communication protocols (I²C, UART and SPI).
 
@@ -16,9 +16,9 @@ A cutout has also been left for the underside of the XIAO to allow access to the
 | :-------------------------: | :-----------------------: | :---------------------: |
 | [![PCB Render]][PCB Render] | [![PCB Front]][PCB Front] | [![PCB Back]][PCB Back] |
 
-[PCB Render]: output/img/pcb-render.png
-[PCB Front]: output/img/pcb-top.png
-[PCB Back]: output/img/pcb-bottom.png
+[PCB Render]: assets/pcb-render.png
+[PCB Front]: output/pcb/img/pcb-top.png
+[PCB Back]: output/pcb/img/pcb-bottom.png
 
 The PCB has been designed in [KiCad EDA 9.0](https://www.kicad.org/).
 
@@ -48,7 +48,7 @@ Here is the list of parameters to use for the PCB order:
 
 | Part            | Ref.                                                         | Quantity | Remarks                                                                                                                                       |
 | --------------- | ------------------------------------------------------------ | :------: | --------------------------------------------------------------------------------------------------------------------------------------------- |
-| PCB             | [ESPHome XIAO Base PCB](./README.md#pcb)                     |    1     | See the previous section on how to order it.                                                                                                  |
+| PCB             | [XIAO Base for ESPHome PCB](./README.md#pcb)                 |    1     | See the previous section on how to order it.                                                                                                  |
 | XIAO Controller | [XIAO ESP32C3], [XIAO ESP32C6] or [XIAO ESP32S3]             |    1     | Any ESPHome compatible XIAO controller should work.                                                                                           |
 | Tactile Switch  | [SCHURTER 1301.9303]                                         |    3     | Any 6 × 6 mm thru-hole tactile switch should work. We recommend a model with a stem length of 3 mm or more.                                   |
 | OLED Display    | [SSD1306 0.91" OLED Display] or [SSD1107 0.96" OLED Display] |    1     | Any SSD1306 or SSD1106 I²C based display should work. The PCB was designed to accommodate both 0.91" (128 × 32) and 0.96" (64 × 128) modules. |
@@ -67,12 +67,84 @@ Example ESPHome configuration files can be found in the [`esphome`](esphome/) di
 Two are provided for the [XIAO ESP32C6] and [XIAO ESP32S3] with two different type of OLED display.
 They should be easily modifiable to fit any ESPHome compatible XIAO microcontrollers and displays.
 
+## Add-ons
+
+### AQStation
+
+|                 Front                 |                Back                 |
+| :-----------------------------------: | :---------------------------------: |
+| [![AQStation Front]][AQStation Front] | [![AQStation Back]][AQStation Back] |
+
+[AQStation Front]: output/addons/aqstation/img/aqstation-top.png
+[AQStation Back]: output/addons/aqstation/img/aqstation-bottom.png
+
+An indoor air quality station fit to accept a [Plantower PMSA003](https://plantower.com/en/products_33/77.html) particulate matter sensor and a [Bosch BME688](https://www.bosch-sensortec.com/products/environmental-sensors/gas-sensors/bme688/) gas, temperature, humidity and pressure sensor.
+
+In order to support as many breakouts as possible, the PCB was designed to be modular with 3 different headers. Here is a list of what should be compatible with the PCB:
+
+- Adafruit BME680 Header
+  - [Adafruit BME280](https://www.adafruit.com/product/2652)
+  - [Adafruit BME680](https://www.adafruit.com/product/3660)
+  - [Adafruit BME688](https://www.adafruit.com/product/5046)
+- Adafruit I2C Header
+  - [BME680 Purple Breakout](https://www.studiopieters.nl/bme680-gas-sensor/)
+  - A lot of other sensor breakouts share compatible pinouts that are not from the BME680 family such as:
+    - [Adafruit Si7021](https://www.adafruit.com/product/3251)
+    - [Adafruit MCP9808](https://www.adafruit.com/product/1782)
+    - [Adafruit AHT20](https://www.adafruit.com/product/4566)
+    - [DFRobot Fermion SHT40](https://www.dfrobot.com/product-2437.html)
+    - [DFRobot Fermion SHT31](https://www.dfrobot.com/product-2013.html)
+    - [DFRobot Fermion SHTC3](https://www.dfrobot.com/product-2436.html)
+    - [DFRobot Fermion AHT20](https://www.dfrobot.com/product-2603.html)
+    - [DFRobot Fermion SHT35](https://www.dfrobot.com/product-2016.html)
+- DFRobot BME680 Header
+  - [DFRobot Fermion BME680](https://www.dfrobot.com/product-2143.html)
+  - [DFRobot Fermion BME688](https://www.dfrobot.com/product-2918.html)
+
+The PCB also includes a STEMMA QT / Qwiic connector to further expand the capabilities of the device, this header is compatible with the following ecosystems:
+
+- [Adafruit STEMMA QT](https://learn.adafruit.com/introducing-adafruit-stemma-qt/what-is-stemma-qt)
+- [SparkFun Qwiic](https://www.sparkfun.com/qwiic)
+- [Soldered easyC](https://soldered.com/easyC/)
+
+### SensorBoard
+
+|                   Front                   |                  Back                   |
+| :---------------------------------------: | :-------------------------------------: |
+| [![SensorBoard Front]][SensorBoard Front] | [![SensorBoard Back]][SensorBoard Back] |
+
+[SensorBoard Front]: output/addons/sensorboard/img/sensorboard-top.png
+[SensorBoard Back]: output/addons/sensorboard/img/sensorboard-bottom.png
+
+A development board to test and develop ESPHome configurations using various breakout boards and sensors.
+
+It was designed to accept up to 3 sensors on the board using different headers and has 2 STEMMA QT / Qwiic connectors to expand it even further. This board can either be used as an add-on for the XIAO Base or as a standalone board by plugging a XIAO MCU directly.
+
+The different headers / connectors are:
+
+- Sensor 1
+  - Adafruit I2C Header
+  - SparkFun I2C Header
+  - Pimoroni I2C Garden
+- Sensor 2
+  - Adafruit I2C Header
+  - SparkFun I2C Header
+  - Pimoroni I2C Garden
+- Sensor 3
+  - Adafruit I2C Header
+  - Adafruit BME680 Header
+  - RGB LED header
+- 2× STEMMA QT / Qwiic connectors
+
+Make sure to check out the pinouts and notes on the PCB for more information on which pins are used for what as well as the back of the PCB for more information on header compatibility.
+A more complete compatibility list can be found in the schematic files.
+
 ## Notes
 
 ### Potential Modifications
 
-- The XIAO microcontroller is currently soldered at the front of the PCB making the OLED display require a double stacked header for clearance as well as force the use of switches with extended stem. Moving it to the back of the PCB would allow for everything in the front to be made smaller but would make access to the battery pads on the back of the XIAO more difficult.
-- Adding some sort of STEMMA QT / Qwiic connector to the back of the PCB would make it easier to integration some sensors.
+- The XIAO microcontroller is currently soldered at the front of the PCB making the OLED display require a double stacked header for clearance as well as force the use of switches with extended stem. Moving it to the back of the PCB would allow for everything in the front to be made smaller but would make access to the battery pads on the back of the XIAO and the `RST` / `BOOTSEL` buttons more difficult.
+- Adding some sort of STEMMA QT / Qwiic connector to the back of the PCB would make it easier to integration some sensors though space is quite limited.
 
 ## License
 
@@ -83,4 +155,4 @@ You are free to use, modify, and distribute this design for any purpose, provide
 - **Attribution**: Appropriate credit is given, a link to the license is provided, and any modifications are clearly indicated.
 - **Reciprocity**: Any derivative works must be released under the same license.
 
-If you are a retailer or business interested in producing or selling this design or related products, I’d love to discuss it! Please feel free to reach out so we can explore potential arrangements.
+If you are a retailer or business interested in producing or selling this design or related products, I’d love to discuss it! Please feel free to reach out, so we can explore potential arrangements.
